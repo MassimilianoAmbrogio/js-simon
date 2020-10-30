@@ -22,7 +22,6 @@ while (randomNumbers.length < 5) {
 
 alert(randomNumbers);
 
-
 /**
  * Game logic
  */
@@ -69,29 +68,5 @@ setTimeout(function () {
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
  }
-
-// $(document).ready(function () {
-
-//     var numCasuali = [];
-//    // Var numeri casuali
-//     for (i = 0; i < 5; i++) {
-//        var numCasuali = Math.floor(Math.random() * 5) + 1;
-//          alert(numCasuali);
-//     }
-    
-//    // Time
-//     setTimeout(function () {
-//         modal.addClass(num);
-//     }, 30000);
-
-//    // Utente
-//     for (i = 0; i < 5; i++) {
-//        var num = parseInt(prompt('Inserisci i numeri numeri visti in precendza ').trim);
-//     }
-    
-//     // Numeri corretti
-//     console.log('I numeri ricordati sono', num);
-   
-// }); // <-- End doc ready
 
  
