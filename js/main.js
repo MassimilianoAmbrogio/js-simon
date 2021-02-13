@@ -8,7 +8,7 @@
  */
 
  // Setup
-var waitTime = 30000;
+var waitTime = 3000;
 var randomNumbers = [];
 
 // Generazione 5 num random univoci
@@ -46,7 +46,7 @@ setTimeout(function () {
   // Collect right numbers
   var rightGuess = [];
 
-  for (var i = 0; i < userNumber.length; i++) {
+  for (var i = 0; i < userNumbers.length; i++) {
     if (randomNumbers.includes(userNumbers[i])) {
        rightGuess.push(userNumbers[i]);
      }
@@ -55,18 +55,16 @@ setTimeout(function () {
   // Game results
   alert('RISULTATI\n' +
     'Lista proposta:\n' + randomNumbers +
-    '\nLista:\n' + userNumbers +
-    '\nIndovinati ' + rightGuess.lenght + 'numeri\n' + rightGuess);
+    '\nLista Utente:\n' + userNumbers +
+    '\nIndovinati ' + rightGuess.length + ' numeri\n' + rightGuess);
 
 }, waitTime);
 
 /**********************
- * Funzioni
+ * Funzioni 
  *********************/
 
  // Gen random numbers
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
- }
-
- 
+}
